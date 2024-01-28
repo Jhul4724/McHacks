@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css" >
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Home Page</title>
+</head>
+
+<body>
+  <section>
+    <nav>
+      <a href="index.html"><img src="" alt="Logo"></a>
+      
+      <ul id="nav-list">
+        <li><a href="index.html">Explore</a></li>
+        <li><a href="system.html">How it works</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    
+      <a href="CTF.html" class="try-now">SEARCH</a>
+    </nav>
+    <div class="image-container">
+      <img src="./Images/grid.png" style="opacity: 0.1;">
+    </div>
+  </section>
+
+  <section class="form">
+    <h1>Fill out this form</h1>
+    <div class="content">
+        <form id="buildPcForm" class="popup-form" action="https://formspree.io/f/mleyyewd" method="post" style="background-color: rgba(255, 255, 255, 0.2); backdrop-filter: blur(5px); padding: 15px;">
+            <h2> Contact Information</h2>
+            <div>
+                <input class="forminput" type="text" placeholder="First and Last Name" id="FirstName" required> <br>
+                <br>
+                <input class="forminput" type="email" placeholder="Email Address" id="LastName" required> <br>
+                <br>
+                <input class="forminput" type="tel" placeholder="Phone Number" required> <br>
+                <br>
+                <label for="notes">Enter your diagnosis. Give as much details as you can.</label> <br>
+                <textarea style="width: 100%; height: 300px;"></textarea>
+                <button type="submit" id="submitButton" class="send">
+                    SEND
+                </button>
+                <br><br>
+            </div>
+            
+        </form>
+    </div>
+  </section>
+
+  
+
+  <footer>
+    <!-- Footer content here -->
+  </footer>
+</body>
+</html>
