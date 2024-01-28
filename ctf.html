@@ -29,7 +29,7 @@
   <section class="form">
     <h1>Fill out this form</h1>
     <div class="content">
-        <form id="buildPcForm" class="popup-form" action="https://formspree.io/f/mleyyewd" method="post" style="background-color: rgba(255, 255, 255, 0.2); backdrop-filter: blur(5px); padding: 15px;">
+        <form id="buildPcForm" style="background-color: rgba(255, 255, 255, 0.2); backdrop-filter: blur(5px); padding: 15px; border-radius: 15px; box-shadow: 1px 1px 20px rgba(10, 5, 20, 0.5);">
             <h2> Contact Information</h2>
             <div>
                 <input class="forminput" type="text" placeholder="First and Last Name" id="FirstName" required> <br>
@@ -38,8 +38,12 @@
                 <br>
                 <input class="forminput" type="tel" placeholder="Phone Number" required> <br>
                 <br>
-                <label for="notes">Enter your diagnosis. Give as much details as you can.</label> <br>
-                <textarea style="width: 100%; height: 300px;"></textarea>
+                <label for="notes">To better assist you in finding the most suitable clinical trials, please provide us with 
+                    details about your medical condition or diagnosis. The information you share will enable our AI-driven 
+                    system to identify and recommend trials that are most relevant to your specific health needs.
+                </label> 
+                <br><br>
+                <textarea style="width: 100%; height: 300px; background-color: rgb(148, 148, 148, 0.1); border-radius: 10px;"></textarea>
                 <button type="submit" id="submitButton" class="send">
                     SEND
                 </button>
