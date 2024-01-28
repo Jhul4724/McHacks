@@ -24,6 +24,15 @@ body {
     }
 }
 
+.outlined-text {
+  color: white;
+  text-shadow:
+    -1px -1px 0 #b9bcfc,
+     1px -1px 0 #c9d3ff,
+    -1px  1px 0 #bbedff,
+     1px  1px 0 #ebfcff;
+}
+
 .btn {
   background-color: rgb(112, 112, 186);
   text-align: center;
@@ -250,11 +259,12 @@ nav .try-now {
 .container {
   margin-left: 15%;
   margin-right: 15%;
-  height: 100vh;
 }
 
 .flex-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 15px;
 }
 
 .flex-item {
@@ -265,6 +275,9 @@ nav .try-now {
   margin: 10px;
   background-color: rgb(128, 128, 128, 0.2);
   transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex-item:hover {
@@ -275,27 +288,94 @@ nav .try-now {
 .inside {
   background-color: #159bfa;
   height: 250px;
+}
 
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  text-align: center;
 }
 
 
+.profpic {
+  padding: 15px;
+}
 
+.name {
+  font-size: 20px;
+  font-weight: 300;
+  text-decoration: none;
+  text-align: center;
+}
 
-
-. {
+.abouttitle {
+  margin-left: 15%; 
+  margin-right: 15%; 
   
+  text-align: center;
 }
 
-. {
-  
+.abouttitle h1 {
+  font-size: 70px;
 }
 
-. {
-  
+
+.abouttext {
+  font-size: 40px;
 }
 
-. {
-  
+.column {
+  width: 300px;
+  height: 500px;
+  border: px solid black;
+  border-radius: 20px;
+  transition: box-shadow 300ms;
+  transition:  300ms;
+  background-color: rgba(217, 217, 217, 0.2);
+  transition: transform 0.3s ease-in-out;
 }
+
+.content {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.profile {
+
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.text {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.column:hover {
+  cursor: pointer;
+	animation: grow 1s;
+	animation-fill-mode: forwards;
+	position: relative;
+	z-index: 50;
+  background-color: rgba(69,243,255, 0.7);
+  color: #23242a;
+}
+@keyframes grow {
+  to {
+      transform: scale(1.2)
+  }
+}
+
 
 
